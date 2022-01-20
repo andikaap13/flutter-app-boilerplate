@@ -16,7 +16,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
   List<WorldTime> locations = [];
 
   void getTimezones() async {
-    Uri uri = Uri.parse('https://worldtimeapi.org/api/timezone/');
+    Uri uri = Uri.parse('http://worldtimeapi.org/api/timezone/');
     Response response = await get(uri);
     timezones = jsonDecode(response.body);
 
